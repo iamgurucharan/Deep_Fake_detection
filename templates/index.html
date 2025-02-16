@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Fake Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Deep Fake Video Analyzer</h1>
+    </header>
+    <div class="container">
+        <div class="upload-section">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file" id="file" accept="video/*" required>
+                <label for="file">Choose a Video File</label>
+                <button type="submit">Upload and Analyze</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Deep Fake Analyzer. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

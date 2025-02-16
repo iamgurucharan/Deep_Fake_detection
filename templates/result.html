@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Analysis Result</h1>
+        <p>The video is classified as: <strong>{{ result }}</strong></p>
+        <a href="/">Analyze Another Video</a>
+        <a href="/remove_request">Request Video Removal</a>
+    </div>
+</body>
+</html>
